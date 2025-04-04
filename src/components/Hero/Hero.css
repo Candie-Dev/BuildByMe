@@ -1,0 +1,157 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  background: linear-gradient(to left, #ff0000, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.hero-action {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-connect, .hero-resume, .linkedin, .github {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 30px; 
+  background: linear-gradient(145deg, #007bff, #ff0000); 
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 250px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-connect:hover, .hero-resume:hover, .linkedin:hover, .github:hover {
+  background: linear-gradient(145deg, #0056b3, #e64a19); 
+  transform: translateY(-6px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  color: #fff;
+}
+
+.linkedin {
+  background-color: #0077b5; 
+}
+
+.github {
+  background-color: #333;
+}
+
+.hero-connect:active, .hero-resume:active, .linkedin:active, .github:active {
+  transform: translateY(-2px); 
+}
+
+
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 70px;
+    width: 85%;
+  }
+
+  .hero p {
+    font-size: 20px;
+    width: 70%;
+    line-height: 32px;
+  }
+
+  .photo {
+    width: 170px;
+    margin-top: 40px;
+  }
+
+  .hero-action {
+    font-size: 22px;
+  }
+
+  .hero-connect, .hero-resume, .linkedin, .github {
+    width: 220px;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    width: 90%;
+    line-height: 28px;
+  }
+
+  .photo {
+    width: 150px;
+    margin-top: 30px;
+  }
+
+  .hero-connect, .hero-resume, .linkedin, .github {
+    width: 200px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+    width: 95%;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .photo {
+    width: 130px;
+    margin-top: 20px;
+  }
+
+  .hero-action {
+    gap: 16px;
+  }
+
+  .hero-connect, .hero-resume, .linkedin, .github {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
